@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.9.0](https://github.com/ROCm/spur/compare/v0.8.0...v0.9.0) (2026-08-14)
+
+
+### Features
+
+* **spur-cli:** filter squeue by node with -w/--nodelist ([#628](https://github.com/ROCm/spur/issues/628)) ([42a1519](https://github.com/ROCm/spur/commit/42a15193052305a53bec9612d0942638d3ed503d))
+* **spurctld:** add job submission validation hook (shell + lua) ([#565](https://github.com/ROCm/spur/issues/565)) ([18e5653](https://github.com/ROCm/spur/commit/18e565325bab0d91670eb89930b3f5f5e46d3e8a))
+* **spurctld:** reap abandoned interactive allocations via client keepalive ([#594](https://github.com/ROCm/spur/issues/594)) ([6a0568b](https://github.com/ROCm/spur/commit/6a0568b2c88c9a3fda3b44a3995692cf41716eec))
+
+
+### Bug Fixes
+
+* **spur-cli:** accept slurm-format reservation durations ([#626](https://github.com/ROCm/spur/issues/626)) ([9697ed6](https://github.com/ROCm/spur/commit/9697ed6a191250ffd49fd30bbe4949e9c38cad6b))
+* **spur-core:** ignore quoted srun tokens in batch step detection ([#627](https://github.com/ROCm/spur/issues/627)) ([1765105](https://github.com/ROCm/spur/commit/17651055ea7e988f7429587beb7ac915806768c7))
+* **spurctld:** enforce partition walltime limits and validate time config ([#593](https://github.com/ROCm/spur/issues/593)) ([172bf8f](https://github.com/ROCm/spur/commit/172bf8f90aea309a90b8bf17bad2ff530ea23cb9))
+* **spurctld:** preserve node allocations during recovery ([#613](https://github.com/ROCm/spur/issues/613)) ([42cfe92](https://github.com/ROCm/spur/commit/42cfe92bd8383f343fa39d9668dab37720d0b43a))
+* **spurctld:** report BeginTime while --begin defers a job ([#555](https://github.com/ROCm/spur/issues/555)) ([c20a051](https://github.com/ROCm/spur/commit/c20a05127b2f225876cf8445ac5a53dbb4be03b0))
+* **spurctld:** tag in-pass-blocked jobs so pending reason is never None ([#620](https://github.com/ROCm/spur/issues/620)) ([831390d](https://github.com/ROCm/spur/commit/831390dc6922bde598600c082755bfa8caf00b15))
+
 ## [0.8.0](https://github.com/ROCm/spur/compare/v0.7.0...v0.8.0) (2026-08-11)
 
 
